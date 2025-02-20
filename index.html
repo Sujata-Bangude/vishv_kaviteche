@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishv Kaviteche</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
         </div>
         <ul class="navbar-items">
             <li><a href="#home">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href=about.html>About</a></li>
             <li><a href="#poems">Poems</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#">Articles</a></li>
@@ -115,7 +116,7 @@
                     सुजाता बानगुडे
                 <div class="interaction">
                     <button class="like-btn" onclick="likePoem(0)">👍 Like</button>
-                    <span id="like-counter-0">0 Likes</span>
+                    <!-- <span id="like-counter-0">0 Likes</span> -->
                     <br>
                     <input type="text" id="comment-input-0" placeholder="Write a comment">
                     <button onclick="addComment(0)">💬 Comment</button>
@@ -158,7 +159,7 @@
                     सुजाता बानगुडे
                 <div class="interaction">
                     <button class="like-btn" onclick="likePoem(1)">👍 Like</button>
-                    <span id="like-counter-1">0 Likes</span>
+                    <!-- <span id="like-counter-1">0 Likes</span> -->
                     <br>
                     <input type="text" id="comment-input-1" placeholder="Write a comment">
                     <button onclick="addComment(1)">💬 Comment</button>
@@ -216,7 +217,7 @@
                     सुजाता बानगुडे
                 <div class="interaction">
                     <button class="like-btn" onclick="likePoem(2)">👍 Like</button>
-                    <span id="like-counter-2">0 Likes</span>
+                    <!-- <span id="like-counter-2">0 Likes</span> -->
                     <br>
                     <input type="text" id="comment-input-2" placeholder="Write a comment">
                     <button onclick="addComment(2)">💬 Comment</button>
@@ -231,8 +232,8 @@
     </section>
   
 
-    <section class="blogs-section">
-        <h2>Blog</h2>
+    <section  id="blogs" class="blogs-section">
+        <h2 class="blog-title">Blog</h2>
         <div class="blog-container">
             <div class="blog-card" id="blog-0">
                 <h3>सफर राजगडाची</h3>
@@ -258,7 +259,7 @@
     
                 <div class="interaction">
                     <button class="like-btn" onclick="likeBlog(0)">👍 Like</button>
-                    <span id="like-counter-0">0 Likes</span>
+                    <!-- <span id="like-counter-0">0 Likes</span> -->
                     <br>
                     <input type="text" id="comment-input-0" placeholder="Write a comment">
                     <button onclick="addComment(0)">💬 Comment</button>
@@ -266,22 +267,10 @@
                 </div>
             </div>
     
-            <!-- <div class="blog-card" id="blog-1">
-                <h3>Blog Title 2</h3>
-                <p>This is the content of the second blog...</p>
-    
-                <div class="interaction">
-                    <button class="like-btn" onclick="likeBlog(1)">👍 Like</button>
-                    <span id="like-counter-1">0 Likes</span>
-                    <br>
-                    <input type="text" id="comment-input-1" placeholder="Write a comment">
-                    <button onclick="addComment(1)">💬 Comment</button>
-                    <div id="comments-1"></div>
-                </div>
-            </div> -->
+        
         </div>
         <div class="more-poems">
-            <button onclick="window.location.href='more-poems.html'">Check More Blogs</button>
+            <button onclick="window.location.href='more-blogs.html'">Check More Blogs</button>
         </div>
     </section>
    
@@ -289,7 +278,11 @@
     <!-- Contact Section -->
 <section id="contact" class="contact-section">
     <h2>Contact Me</h2>
-    <form id="contact-form" action="your-server-endpoint" method="POST">
+    <form id="myForm" action="https://formsubmit.co/sujatabangude46@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <input type="hidden" name="_subject" value="New Message from Website">
+        <input type="hidden" name="_captcha" value="false">
+
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -306,16 +299,18 @@
     </form>
 </section>
 
+
 <!-- Footer Section -->
 <footer class="footer">
-    <div class="footer-container">
-        
-        <div class="social-media">
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <div class="footer-content">
+        <p>&copy; 2025 vishv_kavitech | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/vishv_kaviteche" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://www.linkedin.com/in/sujata-bangude-a05628265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"  class="social-icon">Linkedin</a>
+            <a href="https://github.com/Sujata-Bangude" target="_blank" class="social-icon">GitHub</a>
+            
         </div>
     </div>
-    <p>&copy; 2025 Sujata Bangude. All rights reserved.</p>
 </footer>
     <script src="script.js"></script>
 </body>
