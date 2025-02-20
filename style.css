@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Poppines',sans-serif;
+    
 }
 
 /* Navigation Bar */
@@ -346,21 +348,25 @@ button:hover {
     }
 /* About section */
 #about {
+    font-family:'Poppines',sans-serif;
+    color: white;
     padding: 100px;
     text-align: center;
     background-color: #798b9c; 
 }
 
-#about h1 {
+#about h1 h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333;
+    font-weight: 600;
+
+   
 }
 
 #about p {
     font-size: 18px;
-    margin-bottom: 30px;
-    color: #333;
+   font-weight: 300;
+   line-height: 1.6;
 }
 
 .about-content {
@@ -381,11 +387,11 @@ button:hover {
     text-align: left;
 }
 
-.about-right h2 {
+/* .about-right h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
-}
+} */
 
 .about-right p {
     font-size: 18px;
