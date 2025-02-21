@@ -438,7 +438,26 @@ button:hover {
     background-color: #E76F51;
 }
 
+.thoughts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 30px;
+    min-height: 60vh; 
+    background-color: #3d4a57; 
+}
 
+.thought {
+    background: #f9f9f9;
+    padding: 80px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+   
+  
+}
 
 
 
@@ -667,5 +686,16 @@ button:hover {
     }
 }
 
+/* Responsive Design for Larger Screens */
+@media (min-width: 600px) {
+    .thought {
+        width: 45%; 
+    }
+}
 
+@media (min-width: 1024px) {
+    .thought {
+        width: 30%; 
+    }
+}
 
