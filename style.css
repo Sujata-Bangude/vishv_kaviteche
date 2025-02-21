@@ -686,7 +686,7 @@ button:hover {
     }
 }
 
-/* Responsive Design for Larger Screens */
+
 @media (min-width: 600px) {
     .thought {
         width: 45%; 
